@@ -1,0 +1,88 @@
+// btn
+.btn-custom {
+    width: auto;
+    height: auto;
+    padding: 18px 20px;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 124%;
+    display: inline-block;
+    
+    @media (max-width: 767px) {
+        font-size: 14px;
+    }
+    
+    // btn Icon
+    &.w-icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        svg{
+            margin-left: 38px;
+        }
+    }
+    
+    // btn Primary
+    &.primary-btn {
+        -webkit-background-image: radial-gradient(208.93% 1302.93% at -16.67% -42.86%, #65FFF9 4.11%, #EBFFFE 40.88%, #B6C6FF 56.73%, #E1D5FF 73.7%, #E0AAFF 94.76%);
+        background-image: radial-gradient(208.93% 1302.93% at -16.67% -42.86%, #65FFF9 4.11%, #EBFFFE 40.88%, #B6C6FF 56.73%, #E1D5FF 73.7%, #E0AAFF 94.76%);
+        border-radius: 8px;
+        color: #1D212D;
+        text-decoration: none;
+        transition: all .3s ease-out;
+        
+        &:hover{    
+            -webkit-background-image: radial-gradient(213.38% 1929.1% at 4.75% 10.71%, #65FFF9 4.11%, #EBFFFE 29.74%, #B6C6FF 52.58%, #E1D5FF 70.39%, #E0AAFF 94.76%);
+            background-image: radial-gradient(213.38% 1929.1% at 4.75% 10.71%, #65FFF9 4.11%, #EBFFFE 29.74%, #B6C6FF 52.58%, #E1D5FF 70.39%, #E0AAFF 94.76%);
+            transition: all .3s ease-out;
+        }
+    }
+    
+    // btn Secondary
+    &.secondary-btn {
+        // text
+        text-decoration: none;
+        background-image: -webkit-gradient(linear, right top, left top, from(#e54e73), to(#753ddb));
+        background-image: radial-gradient(208.93% 1302.93% at -16.67% -42.86%, #65FFF9 4.11%, #EBFFFE 40.88%, #B6C6FF 56.73%, #E1D5FF 73.7%, #E0AAFF 94.76%);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+
+        // border
+        border: 1px solid;
+        border-image-slice: 1;
+        border-image-source: radial-gradient(208.93% 1302.93% at -16.67% -42.86%, #65FFF9 4.11%, #EBFFFE 40.88%, #B6C6FF 56.73%, #E1D5FF 73.7%, #E0AAFF 94.76%);
+        -o-border-image-source: radial-gradient(208.93% 1302.93% at -16.67% -42.86%, #65FFF9 4.11%, #EBFFFE 40.88%, #B6C6FF 56.73%, #E1D5FF 73.7%, #E0AAFF 94.76%);;
+        -moz-border-image-source: radial-gradient(208.93% 1302.93% at -16.67% -42.86%, #65FFF9 4.11%, #EBFFFE 40.88%, #B6C6FF 56.73%, #E1D5FF 73.7%, #E0AAFF 94.76%);;
+        -webkit-border-image-source: radial-gradient(208.93% 1302.93% at -16.67% -42.86%, #65FFF9 4.11%, #EBFFFE 40.88%, #B6C6FF 56.73%, #E1D5FF 73.7%, #E0AAFF 94.76%);;
+
+
+        &:hover{
+            // text
+            background: radial-gradient(208.93% 1302.93% at -16.67% -42.86%, #65FFF9 4.11%, #EBFFFE 40.88%, #B6C6FF 56.73%, #E1D5FF 73.7%, #E0AAFF 94.76%);
+            -webkit-text-fill-color: unset;
+            -webkit-background-clip: unset;
+            color: #1D212D;
+            transition: all .3s ease-out;
+
+            svg{
+                path{
+                    stroke: #1D212D;
+                }
+            }
+        }
+    }
+}
+
+// button text
+.btn-text{
+    padding: 0;
+    border: 0;
+    
+    &:focus{
+        outline: none;
+        border: none;
+        box-shadow: none;
+    }
+}

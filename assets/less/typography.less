@@ -1,0 +1,186 @@
+@heading-text: 'Dela Gothic One', cursive;
+@body-text: 'Montserrat', sans-serif;
+
+// Typography
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: @heading-text;
+}
+
+h1 {
+    font-family: @heading-text;
+    font-weight: inherit;
+    font-size: 48px;
+    line-height: 58px;
+    color: #fff;
+    
+    @media (max-width: 767px) {
+        font-size: 40px;
+        line-height: 50px !important;
+    }
+}
+
+h2 {
+    font-family: @heading-text;
+    font-weight: inherit;
+    font-size: 40px !important;
+    line-height: 50px !important;
+    color: #fff;
+
+    @media (max-width: 767px) {
+        font-size: 32px !important;
+        line-height: 42px !important;
+    }
+}
+
+h3 {
+    font-family: @heading-text;
+    font-weight: inherit;
+    font-size: 32px !important;
+    line-height: 42px !important;
+    color: #fff;
+
+    @media (max-width: 767px) {
+        font-size: 28px !important;
+        line-height: 38px !important;
+    }
+}
+
+h4 {
+    font-family: @heading-text;
+    font-weight: inherit;
+    font-size: 20px !important;
+    line-height: 30px !important;
+    color: #fff;
+
+    @media (max-width: 767px) {
+        font-size: 16px !important;
+        line-height: 26px !important;
+    }
+}
+
+h5 {
+    font-family: @heading-text;
+    font-weight: inherit;
+    font-size: 18px !important;
+    line-height: 28px !important;
+    color: #fff;
+
+    @media (max-width: 767px) {
+        font-size: 14px !important;
+        line-height: 24px !important;
+    }
+}
+
+h6 {
+    font-family: @heading-text;
+    font-weight: inherit;
+    font-size: 16px !important;
+    line-height: 26px !important;
+    color: rgba(255, 255, 255, 0.56);
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    
+    @media (max-width: 767px) {
+        font-size: 12px !important;
+        line-height: 22px !important;
+    }
+}
+
+p {
+    font-size: 15px;
+    font-family: @body-text;
+    color: rgba(255, 255, 255, 0.72);
+
+    @media (max-width: 767px) {
+        font-size: 14px !important;
+        line-height: 24px !important;
+    }
+}
+
+.hero-text{
+    p{
+        font-family: @body-text;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        line-height: 132%;
+        color: #fff !important;
+    }
+}
+
+.title-wrapper {
+    h2 {
+        font-family: @heading-text;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 32px !important;
+        line-height: 140% !important;
+        color: #fff;
+    }
+    
+    p {
+        font-family: @body-text;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px !important;
+        line-height: 27px !important;
+        color: rgba(255, 255, 255, 0.72);
+    }
+}
+
+.subtitle {
+    h2 {
+        font-family: @heading-text;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px !important;
+        line-height: 140% !important;
+        color: #fff;
+    }
+    
+    h5 {
+        font-family: @body-text;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 11px !important;
+        line-height: 140% !important;
+        color: #fff;
+    }
+}
+.desc{
+    p{
+        font-family: @body-text;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 140%;
+        color: #fff;
+    }
+}
+
+.pattern-text-border-160 {
+    font-family: @heading-text;
+    font-size: 160px;
+    line-height: 160%;
+    letter-spacing: 0.12em;
+    -webkit-text-fill-color: transparent;
+    /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(255, 255, 255, 0.08);
+    text-transform: uppercase;
+}
+.pattern-text-border-120 {
+    font-family: @heading-text;
+    font-size: 120px;
+    line-height: 120%;
+    letter-spacing: 0.12em;
+    -webkit-text-fill-color: transparent;
+    /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(255, 255, 255, 0.08);
+}
